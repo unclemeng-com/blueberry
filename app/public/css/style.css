@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font: 1.2em/1 'Noto Sans', sans-serif;
+}
+
+form {
+    /* フォームをページの中央に置く */
+    margin: 0 auto;
+    width: 2200px;
+    /* height: 1900px; */
+    /* フォームの範囲がわかるようにする */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+  .searchForm {
+    position: relative;
+  }
+  .searchForm-input {
+    width: 800px;;
+  }
+  .searchForm-submit {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: calc(50% - 19px);
+    padding:0 10px;
+    border-radius: 0 4px 4px 0;
+    background: #999;
+  }
+  .searchForm-submit::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .searchForm-submit::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 6px;
+    top: calc(50% + 6px);
+    left: calc(50% + 2px);
+    border-top: solid 2px #fff;
+    transform: rotate(45deg);
+  }
+
+  .container {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    /*transform: translate(-50%, -50%);  */
+  }
+  /****** コンテナ中の要素指定 *****************/
+  .container > input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /************checkbox 指定*****************/
+  .container > label {
+    /*display: block;*/
+    position: relative;
+    float: left;
+    margin: 2px;
+    padding: 15px 25px 15px 50px;
+    border: 2px solid #fff;
+    border-radius: px;
+    color: #fff;
+    background-color: #cad2d6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+    font: 0.7em/1 'Noto Sans', sans-serif;
+  }
+  
+  .container > label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: 32px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    transition: background-color .2s;
+  }
+  
+  .container > label:first-of-type {
+    transform: translateX(10px);
+  }
+  
+  .container > label:hover, input:focus + label {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  }
+  
+  .container > input:checked + label {
+    background-color: #34417c;
+  }
+  
+  .container > input:checked + label::before {
+    background-color: #fff;
+  }
+
+  .highlight {
+    background-color:yellow;
+  }
