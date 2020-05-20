@@ -22,7 +22,7 @@ Restart Postgres Service(サービスを立ち上げ、Postgresサービスを�
 ```
 run cmd
 >mkdir C:\work\jinmeng\01_work相互参照表\plottype
-```
+
 copy config.ini to \plottype
 copy data_processing_Exl2DB.XLSM to \plottype
 ```
