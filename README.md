@@ -41,8 +41,8 @@ ejs				https://www.npmjs.com/package/ejs		--Node.js のViewをhtmlタグによ�
 forever				https://www.npmjs.com/package/forever		--公開のためのツール.(エラー発生しても,サーバーを止めることなく)							
 jsdom				https://www.npmjs.com/package/node-jsdom	--htmlタグ指定するためのもの
 ```
-##Node.js Install
-###Proxy Setting(needed when in some intranet)
+## Node.js Install
+### Proxy Setting(needed when in some intranet)
 ```
 npm config set proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
 npm config set https-proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
