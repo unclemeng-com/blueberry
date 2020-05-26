@@ -43,16 +43,24 @@ jsdom			https://www.npmjs.com/package/node-jsdom	htmlタグ指定するための
 ```
 ## Node.js Install
 ```
-### 1. Install Node.js for windows
-### 2. Confirm the npm --version at command prompt
-### 3. >mkdir bvapp\app
-### 4. >cd bvapp\app
-### 5. >npm init
-### 6. >
-### Proxy Setting(needed when in some intranet)
+1. Install Node.js for windows
+2. Confirm the npm --version at command prompt
+3. >mkdir bvapp
+4. >cd bvapp
+5. >npm init
+6. >npm install -g express --save
+If any error happened please set the proxy server
+  Proxy Setting(needed when in some intranet)
+  npm config set proxy http://proxyuser:proxypass(省略可)@サーバアドレス:ポート番号　例:npm config set proxy http://xsys.co.jp:8080
+　npm config set https-proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
+　npm config set registry http://registry.npmjs.org/
+7. >npm install -g jquery --save
+8. >npm install -g pg --save
+9. >npm install -g ejs --save
+10.>npm install -g forever --save
+11.>npm install -g express-generator --save
+12.>express app
 ```
 ```
-npm config set proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
-npm config set https-proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
-npm config set registry http://registry.npmjs.org/
+
 ```
