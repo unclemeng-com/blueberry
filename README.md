@@ -1,10 +1,10 @@
 # blueberry
 product for transport the excel or word data to database
 
-## Create Database
-DB Name = postgres
-User=postgres
-Password=postgres
+## Install Postgres
+1. DB Name = postgres
+2. User=postgres
+3. Password=postgres
 
 ## Database setup
 ```
@@ -17,6 +17,10 @@ lc_messages = 'Japanese_Japan.932'
 ↓
 lc_messages = 'en_US'
 Restart Postgres Service(サービスを立ち上げ、Postgresサービスを再起動) then you can check the english message.
+
+### It is better to restore a database
+>pg_dump -h localhost -U postgres -d postgres > postgres.dump
+>psql -U postgres -d postgres < postgres.dump
 
 ## Excel VBA setup
 ```
