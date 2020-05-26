@@ -63,8 +63,6 @@ If any error happened please set the proxy server
 9. >npm install -g ejs --save
 10.>npm install -g forever --save
 11.>npm install -g express-generator --save
-12.>express app
-```
+12.>express app --ejs
 ```
 
-```
