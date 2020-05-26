@@ -42,6 +42,12 @@ forever			https://www.npmjs.com/package/forever		公開用ツール.(サーバ�
 jsdom			https://www.npmjs.com/package/node-jsdom	htmlタグ指定するためのもの
 ```
 ## Node.js Install
+### 1. Install Node.js for windows
+### 2. Confirm the npm --version at command prompt
+### 3. >mkdir bvapp\app
+### 4. >cd bvapp\app
+### 5. >npm init
+### 6. >
 ### Proxy Setting(needed when in some intranet)
 ```
 npm config set proxy http://proxyuser:proxypass@サーバアドレス:ポート番号
