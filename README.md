@@ -65,4 +65,8 @@ If any error happened please set the proxy server
 11.>npm install -g express-generator --save
 12.>express app --ejs
 ```
+13. File Copy
+Copy all file from \bvapp\app
 
+## Open the port(If needed)
+F-Secure : chose task at userinterface. Add the 3000 port.
